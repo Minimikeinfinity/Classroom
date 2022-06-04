@@ -1,0 +1,46 @@
+<html> 
+<head>
+<header>    
+<title> {{"Welcome to your login page"}} </title>
+<style>
+    .textbox-padding {
+        padding: 10px; 
+    } 
+    .box{
+        padding: 12px;
+        background-color: #DAD;
+    }
+
+
+
+</style>
+
+</header>
+
+<body>
+ <div style = 'border: 1px solid #000; width: 300px; margin: 100px auto; background-color: #DDD;'>   
+<form action = '/login' method="post">{% csrf_token %}
+    
+    <div class  = 'textbox-padding' >
+        Username: <br/>
+        <input type = 'text' id = 'username'/>  
+
+    </div>
+    
+    
+    <div class = 'textbox-padding'>
+        Password:<br/>
+        <input type = 'password' id = 'password'/>
+    </div>
+    
+    <input type="submit" value="OK">   
+    
+    
+</form>
+ </div>
+</body>    
+<p> 
+    "Paragraph"
+</p>    
+</head>   
+</html>
