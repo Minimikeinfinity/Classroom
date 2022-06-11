@@ -3,8 +3,13 @@ from django.http import HttpResponse
 #from . import submit 
 
 def index(request):
-    title = "***New test Page***"
-    pagecontent = """Information is very important as naviagte throughout our lives."""
+    title = "***welcome User***"
+    pagecontent = """Information is very important as naviagte throughout our lives.
+    <br>
+    The next line of information.
+    <br>
+    Last line.
+    """
     
     sidebar = "Sidebar information goes here"
     additional_notes = "Notes"
